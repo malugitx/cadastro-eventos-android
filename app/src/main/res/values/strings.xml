@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CadastroEventos</string>
+    <string name="titulo_app">Cadastro de Eventos Acadêmicos</string>
+    <string name="descricao_app">Preencha o formulário abaixo para se inscrever em nossos eventos acadêmicos. Suas informações serão usadas para a confirmação da participação e para o envio de novidades de acordo com as suas áreas de interesse.</string>
+    <string name="desc_logo">Logotipo de eventos acadêmicos</string>
+
+    <string name="secao_dados">Dados do Participante</string>
+    <string name="lbl_nome">Nome completo</string>
+    <string name="hint_nome">Digite seu nome completo</string>
+    <string name="lbl_email">E-mail</string>
+    <string name="hint_email">exemplo@email.com</string>
+    <string name="lbl_telefone">Telefone</string>
+    <string name="hint_telefone">(00) 00000-0000</string>
+    <string name="lbl_idade">Idade</string>
+    <string name="hint_idade">Ex.: 20</string>
+    <string name="lbl_instituicao">Instituição de ensino</string>
+    <string name="hint_instituicao">Ex.: Uniube</string>
+    <string name="lbl_obs">Observações adicionais</string>
+    <string name="hint_obs">Conte-nos algo sobre sua participação</string>
+
+    <string name="secao_interesse">Áreas de Interesse</string>
+    <string name="area_software">Desenvolvimento de Software</string>
+    <string name="area_ia">Inteligência Artificial</string>
+    <string name="area_seguranca">Segurança da Informação</string>
+    <string name="area_mobile">Desenvolvimento Mobile</string>
+    <string name="area_dados">Ciência de Dados</string>
+
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="btn_limpar">Limpar</string>
+</resources>

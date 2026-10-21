@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fundo"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:contentDescription="@string/desc_logo"
+                android:src="@drawable/ic_evento"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/titulo_app"
+                android:textColor="@color/primaria"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/imgLogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgLogo"
+                app:layout_constraintTop_toTopOf="@id/imgLogo" />
+
+            <TextView
+                android:id="@+id/txtDescricao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/descricao_app"
+                android:textColor="@color/texto"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/separador" />
+
+        <TextView
+            style="@style/Secao"
+            android:text="@string/secao_dados" />
+
+        <TextView
+            style="@style/Rotulo"
+            android:text="@string/lbl_nome" />
+        <EditText
+            android:id="@+id/edtNome"
+            style="@style/Campo"
+            android:hint="@string/hint_nome"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textCapWords" />
+
+        <TextView
+            style="@style/Rotulo"
+            android:text="@string/lbl_email" />
+        <EditText
+            android:id="@+id/edtEmail"
+            style="@style/Campo"
+            android:hint="@string/hint_email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            style="@style/Rotulo"
+            android:text="@string/lbl_telefone" />
+        <EditText
+            android:id="@+id/edtTelefone"
+            style="@style/Campo"
+            android:hint="@string/hint_telefone"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <TextView
+            style="@style/Rotulo"
+            android:text="@string/lbl_idade" />
+        <EditText
+            android:id="@+id/edtIdade"
+            style="@style/Campo"
+            android:hint="@string/hint_idade"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="3" />
+
+        <TextView
+            style="@style/Rotulo"
+            android:text="@string/lbl_instituicao" />
+        <EditText
+            android:id="@+id/edtInstituicao"
+            style="@style/Campo"
+            android:hint="@string/hint_instituicao"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/Rotulo"
+            android:text="@string/lbl_obs" />
+        <EditText
+            android:id="@+id/edtObservacoes"
+            style="@style/Campo"
+            android:gravity="top|start"
+            android:hint="@string/hint_obs"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences"
+            android:lines="4"
+            android:maxLines="6"
+            android:minLines="3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/separador" />
+
+        <TextView
+            style="@style/Secao"
+            android:text="@string/secao_interesse" />
+
+        <CheckBox
+            android:id="@+id/chkSoftware"
+            style="@style/Check"
+            android:text="@string/area_software" />
+        <CheckBox
+            android:id="@+id/chkIA"
+            style="@style/Check"
+            android:text="@string/area_ia" />
+        <CheckBox
+            android:id="@+id/chkSeguranca"
+            style="@style/Check"
+            android:text="@string/area_seguranca" />
+        <CheckBox
+            android:id="@+id/chkMobile"
+            style="@style/Check"
+            android:text="@string/area_mobile" />
+        <CheckBox
+            android:id="@+id/chkDados"
+            style="@style/Check"
+            android:text="@string/area_dados" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/separador" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/primaria"
+                android:text="@string/btn_cadastrar"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnLimpar"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secundaria"
+                android:text="@string/btn_limpar"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
